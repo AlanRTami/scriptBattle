@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+     <meta charset="utf-8" />
+     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+     <link rel="stylesheet" href="./style.css" />
+     <title>ScriptBattle</title>
+  </head>
+
+  <body>
+    <div class="battle-page">
+      <div class="spacer"></div>
+
+      <a href="index.html" class="button" style="vertical-align: middle"> <!-- quit button -->
+        <span>Quit</span>
+      </a>
+      <div class="spacer"></div>
+
+      <h1 class="title-heading">Round 1 !!!</h1> <!-- Heading 1 -->
+
+      <div class="spacer"></div>
+
+      <div class="m-r-s"> <!--Game rules-->
+        <img src="m-r-s.png" alt="melee-range-shield"> <!-- melee-range-shield image-->
+        <ul> <!--Game rules list-->
+          <li>Melee attacks > Defensive attack</li>
+          <li>Defensive attacks > Ranged attacks</li>
+          <li>Ranged attacks > Melee attacks</li>
+          <p>-</p>
+          <p>when using an attack of your type you strike first!</p>
+        </ul>
+        
+      </div>
+      <div class="game-controls"> <!-- game control buttons -->
+        <button class="ranged" type="button">Ranged attack</button>  <!--Ranged attack button-->
+        <button class="melee" type="button">Melee strike</button> <!--Melee attack button-->
+        <button class="defense" type="button">Defensive strike</button> <!--Defense attack button-->
+      </div>
+
+      <div class="character-stats"> <!-- character stats information-->
+          <div class="player-stats">
+              <img id="player-type-icon" src="ranged-icon.png">
+              <p id="playerHealth">Health: 1000</p>
+          </div>
+          <div class="cowboy-stats">
+              <img id="cowboy-type-icon" src="melee-icon.png">
+              <p id="cowboyHealth">Health: 1000</p>
+          </div>
+      </div>
+      <div class="damage-dealt"> <!-- damage indicators-->
+          <p id="damageToPlayer"> </p>
+          <p id="damageToCowboy"> </p> 
+      </div>
+          
+      <div class="sprites-battle"> <!-- animation container -->
+        <img class="player" src="player-idle.gif" alt="Player One idle"> <!-- player -->
+        <img class="cowboy" src="cowboy-idle.gif" alt="Cowboy idle"> <!-- cowboy -->
+      </div>
+
+      <div class="spacer"></div>
+
+      <script src="app.js"></script> <!-- link to the javascript document-->
+    </div>
+  </body>
+
+</html>
